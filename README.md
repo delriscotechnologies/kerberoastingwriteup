@@ -20,4 +20,3 @@ It looks at how authentication, password choices, and account permissions work t
 - [NIST SP 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b.html)
 - [HackTricks: Kerberoast](https://hacktricks.wiki/en/windows-hardening/active-directory-methodology/kerberoast.html)
 - [Microsoft: Kerberoasting mitigation guidance](https://www.microsoft.com/en-us/security/blog/2024/10/11/microsofts-guidance-to-help-mitigate-kerberoasting/)
-- [Microsoft: Authentication methods and phishing-resistant MFA](https://learn.microsoft.com/en-us/entra/identity/authentication/overview-authentication)
