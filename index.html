@@ -95,21 +95,19 @@ dialog::backdrop{background:rgba(0,0,0,.9)}
 <h2 id="risk-heading">How to reduce the risk</h2>
 <div class="prose controls">
 <h3>Strong credentials</h3>
-<p>In July 2025, NIST published updated password guidance in <a href="https://pages.nist.gov/800-63-4/sp800-63b.html">SP 800-63B-4</a>. For user authentication, its requirements include:</p>
+<p>In July 2025, NIST published password guidance. For user passwords:</p>
 <ul>
-<li><strong>At least 15 characters</strong> when a password is the only authentication factor.</li>
-<li><strong>Block common or compromised passwords</strong>, including predictable values based on the username or service name.</li>
-<li><strong>Prioritize length over forced character combinations</strong>; do not require fixed mixtures of uppercase letters, numbers, and symbols.</li>
-<li><strong>Change passwords when compromise is evident</strong>, rather than imposing routine changes on a fixed schedule.</li>
+<li><strong>Use at least 15 characters</strong> when signing in with a password alone.</li>
+<li><strong>Block common or leaked passwords.</strong></li>
+<li><strong>Favor length</strong> over rules requiring a capital letter, number, or symbol.</li>
+<li><strong>Change compromised passwords</strong>, rather than changing them on a fixed schedule.</li>
 </ul>
-<p>These requirements provide a user-password baseline. For service accounts exposed to offline guessing, I recommend going further:</p>
+<p>For added protection:</p>
 <ul>
-<li><strong>Use substantially longer secrets</strong> within the application’s supported limits.</li>
-<li><strong>Generate passwords randomly</strong> from uppercase and lowercase letters, numbers, and supported symbols.</li>
-<li><strong>Avoid predictable choices</strong>: dictionary words, personal details, dates, keyboard patterns, and familiar substitutions.</li>
-<li><strong>Keep each secret unique and protected</strong>: do not reuse passwords across accounts, and store them in an approved secrets manager.</li>
+<li><strong>For service accounts you manage yourself, use at least 30 random characters.</strong> Use a different password for each account and save it in an approved password manager.</li>
+<li><strong>Use FIDO2 security keys for user and administrator sign-ins where supported.</strong> They do not replace service-account passwords.</li>
 </ul>
-<h3>Managed accounts</h3><p>Use a group Managed Service Account (gMSA) when the application supports it. Windows generates and changes the password automatically, so administrators do not have to choose it or update each service manually. Only approved servers should be allowed to retrieve it.</p>
+<h3>Managed accounts</h3><p>Use a group Managed Service Account (gMSA) if your application supports it. Windows creates the password and changes it automatically every 30 days by default. Allow only the servers running that service to retrieve it.</p>
 <h3>Modern encryption</h3><p>Keep domain controllers updated and configure service accounts and applications to use AES. After checking compatibility, disable obsolete RC4 and DES. If an old account lacks AES keys, plan a password reset with the service owner. AES makes offline guessing more expensive; weak passwords can still be recovered.</p>
 <h3>Least privilege</h3><p>Give each service account only the permissions its service needs. Avoid privileged group membership and avoid using administrative identities to run ordinary services.</p>
 </div>
