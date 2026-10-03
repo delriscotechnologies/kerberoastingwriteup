@@ -12,7 +12,7 @@
 
 This write-up follows a controlled Active Directory lab, from requesting service tickets with Rubeus to testing passwords offline with Hashcat and John the Ripper.
 
-It explains SPNs, legacy RC4 encryption, and the impact of service-account permissions. The controls cover NIST’s user-password guidance, stronger service-account secrets, automatic password management by Windows, AES, and least privilege. A short reflection considers AI-assisted guessing as part of password cracking.
+It explains SPNs, legacy RC4 encryption, and the impact of service-account permissions. The controls cover NIST’s user-password guidance, stronger service-account secrets, automatic password management by Windows, AES, and least privilege. A short reflection examines how AI-assisted guessing can improve attacks on predictable passwords, even when newer encryption is used.
 
 This lab is for educational research only. No enterprise or personal credentials are disclosed. The displayed values are adapted lab examples; the lab credentials are retired and will not be reused.
 
@@ -20,3 +20,4 @@ This lab is for educational research only. No enterprise or personal credentials
 
 - [GhostPack: Rubeus](https://github.com/GhostPack/Rubeus)
 - [NIST SP 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b.html)
+
