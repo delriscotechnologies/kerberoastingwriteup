@@ -16,6 +16,5 @@ It explains SPNs, legacy RC4 encryption, the impact of service-account permissio
 
 ## References
 
-- [CrowdStrike: What is a Kerberoasting attack?](https://www.crowdstrike.com/en-us/cybersecurity-101/cyberattacks/kerberoasting/)
 - [GhostPack: Rubeus](https://github.com/GhostPack/Rubeus)
 - [NIST SP 800-63B-4](https://pages.nist.gov/800-63-4/sp800-63b.html)
