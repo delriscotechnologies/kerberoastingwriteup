@@ -1,4 +1,4 @@
-<h1 align="center">KERBEROASTING WRITE-UP</h1>
+<h1 align="center">KERBEROASTING</h1>
 
 <p align="center">
   An Active Directory lab exploring Kerberos service tickets, offline password recovery, and service-account protection.
