@@ -12,7 +12,9 @@
 
 This write-up follows a controlled Active Directory lab, from requesting service tickets with Rubeus to testing passwords offline with Hashcat and John the Ripper.
 
-It explains SPNs, legacy RC4 encryption, the impact of service-account permissions, and practical controls such as managed accounts, AES, and least privilege. The displayed credentials and ticket values are adapted lab examples.
+It explains SPNs, legacy RC4 encryption, and the impact of service-account permissions. The controls cover NIST’s user-password guidance, stronger service-account secrets, automatic password management by Windows, AES, and least privilege. A short reflection considers AI-assisted guessing as part of password cracking.
+
+This lab is for educational research only. No enterprise or personal credentials are disclosed. The displayed values are adapted lab examples; the lab credentials are retired and will not be reused.
 
 ## References
 
