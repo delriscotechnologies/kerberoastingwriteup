@@ -110,7 +110,7 @@ dialog::backdrop{background:rgba(0,0,0,.9)}
 <h3>Modern encryption</h3><p>Keep domain controllers updated and configure service accounts and applications to use AES. After checking compatibility, disable obsolete RC4 and DES. If an old account lacks AES keys, plan a password reset with the service owner. AES makes offline guessing more expensive; weak passwords can still be recovered.</p>
 <h3>Least privilege</h3><p>Give each service account only the permissions its service needs. Avoid privileged group membership and avoid using administrative identities to run ordinary services.</p>
 </div>
-<p>These controls make recovery harder, but do not guarantee time to detect an attack. Offline guesses do not produce domain login events. With service-ticket auditing enabled, requests are recorded as Event 4769 on domain controllers. Monitor unusual request patterns and service-account activity for signs of misuse, including requests for AES tickets.</p>
+<p>These controls make recovery harder, but do not guarantee time to detect an attack. Offline guesses do not produce domain login events.</p>
 </section>
 <section class="section takeaway" id="takeaway" aria-labelledby="takeaway-heading">
 <h2 id="takeaway-heading">Final takeaway</h2>
