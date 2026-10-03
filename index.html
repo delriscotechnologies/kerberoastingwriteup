@@ -106,7 +106,6 @@ dialog::backdrop{background:rgba(0,0,0,.9)}
 <li>For service accounts you manage yourself, use at least 30 random characters. Use a different password for each account and save it in an approved password manager.</li>
 </ul>
 <h3>Strong authentication</h3><p>Require multi-factor authentication (MFA) for user and administrator sign-ins wherever the platform supports it. Prefer phishing-resistant methods such as FIDO2 security keys. This helps prevent a stolen password from being enough to sign in, but does not stop an attacker with an existing Kerberos session from requesting service tickets or testing their material offline.</p>
-<h3>Managed accounts</h3><p>Use a group Managed Service Account (gMSA) if your application supports it. Windows creates and updates the password automatically, every 30 days by default. Nobody needs to type or memorize it. Allow only the servers running that service to retrieve it.</p>
 <h3>Modern encryption</h3><p>Keep domain controllers updated and configure service accounts and applications to use AES. After checking compatibility, disable obsolete RC4 and DES. If an old account lacks AES keys, plan a password reset with the service owner. AES makes offline guessing more expensive; weak passwords can still be recovered.</p>
 <h3>Least privilege</h3><p>Give each service account only the permissions its service needs. Avoid privileged group membership and avoid using administrative identities to run ordinary services.</p>
 </div>
