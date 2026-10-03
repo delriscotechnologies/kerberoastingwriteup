@@ -103,9 +103,9 @@ dialog::backdrop{background:rgba(0,0,0,.9)}
 </ul>
 <p>Best practices:</p>
 </ul>
-<h3>Strong authentication</h3><p>Require multi-factor authentication (MFA) for user and administrator sign-ins wherever the platform supports it. Prefer phishing-resistant methods such as FIDO2 security keys. This helps prevent a stolen password from being enough to sign in, but does not stop an attacker with an existing Kerberos session from requesting service tickets or testing their material offline.</p>
-<h3>Modern encryption</h3><p>Keep domain controllers updated and configure service accounts and applications to use AES. After checking compatibility, disable obsolete RC4 and DES. If an old account lacks AES keys, plan a password reset with the service owner. AES makes offline guessing more expensive; weak passwords can still be recovered.</p>
-<h3>Least privilege</h3><p>Give each service account only the permissions its service needs. Avoid privileged group membership and avoid using administrative identities to run ordinary services.</p>
+<h3>Strong authentication</h3><p>Require multi-factor authentication (MFA) for user and administrator sign-ins wherever the platform supports it. Prefer phishing-resistant methods such as FIDO2 security keys.</p>
+<h3>Modern encryption</h3><p>Keep domain controllers updated and configure service accounts and applications to use AES. After checking compatibility, disable obsolete RC4 and DES. If an old account lacks AES keys, plan a password reset with the service owner.</p>
+<h3>Least privilege</h3><p>Give each service account only the permissions its service needs.</p>
 </div>
 </section>
 <section class="section takeaway" id="takeaway" aria-labelledby="takeaway-heading">
